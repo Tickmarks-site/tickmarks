@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tickmarks Intranet</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <header>
+      <div class="logo">Tickmarks</div>
+      <div id="welcome-message">Welcome, Alex Wilbur</div>
+    </header>
+
+    <div class="container">
+      <main>
+        <section id="internal-apps" aria-labelledby="internal-apps-title">
+          <h2 id="internal-apps-title">Internal Apps</h2>
+          <div class="quick-links-grid">
+            <a href="#" class="card">
+              <div class="card-icon">📱</div>
+              <div class="card-title">GreyTHR</div>
+            </a>
+            <a href="#" class="card">
+              <div class="card-icon">🔗</div>
+              <div class="card-title">Tick&Tie</div>
+            </a>
+            <a href="#" class="card">
+              <div class="card-icon">📅</div>
+              <div class="card-title">TimeSheet Tracker</div>
+            </a>
+            <a href="#" class="card">
+              <div class="card-icon">💰</div>
+              <div class="card-title">Expense Claims</div>
+            </a>
+            <a href="#" class="card">
+              <div class="card-icon">🎓</div>
+              <div class="card-title">LMS</div>
+            </a>
+          </div>
+        </section>
+
+        <section id="policy-docs" aria-labelledby="policy-docs-title">
+          <h2 id="policy-docs-title">Policy Documents</h2>
+          <div class="quick-links-grid">
+            <a href="#" class="card">
+              <div class="card-icon">📄</div>
+              <div class="card-title">Employee Policy</div>
+            </a>
+            <a href="#" class="card">
+              <div class="card-icon">📄</div>
+              <div class="card-title">HR Policy</div>
+            </a>
+            <a href="#" class="card">
+              <div class="card-icon">📄</div>
+              <div class="card-title">Leave Policy</div>
+            </a>
+          </div>
+        </section>
+
+        <section id="projects-won" aria-labelledby="projects-won-title">
+          <h2 id="projects-won-title">Projects Won</h2>
+          <div class="content-grid">
+            <div class="project-card">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=400" alt="Team collaborating on a project">
+              <h3>Project Innovate</h3>
+              <p>A groundbreaking initiative to redefine our core product line for the next decade.</p>
+            </div>
+            <div class="project-card">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=400" alt="People in a meeting pointing at a whiteboard">
+              <h3>Client Synergy</h3>
+              <p>Successfully integrated our services with a major new enterprise partner.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="csr-activities" aria-labelledby="csr-activities-title">
+          <h2 id="csr-activities-title">CSR & Employee Engagement</h2>
+          <div class="content-grid">
+            <div class="project-card">
+              <img src="https://images.unsplash.com/photo-1618423445864-764789523a8b?q=80&w=400" alt="People planting a tree">
+              <h3>Annual Green Drive</h3>
+              <p>Our team participated in the city-wide tree planting event to promote a greener environment.</p>
+            </div>
+             <div class="project-card">
+              <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=400" alt="Volunteers packing food donations">
+              <h3>Community Food Bank</h3>
+              <p>Volunteering day at the local food bank, helping sort and distribute meals.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside>
+        <div id="calendar-widget" class="widget" aria-labelledby="calendar-title">
+          <div class="widget-header">
+            <h3 id="calendar-title"></h3>
+          </div>
+          <div class="calendar-grid">
+            <div class="day-name">S</div>
+            <div class="day-name">M</div>
+            <div class="day-name">T</div>
+            <div class="day-name">W</div>
+            <div class="day-name">T</div>
+            <div class="day-name">F</div>
+            <div class="day-name">S</div>
+          </div>
+          <div id="calendar-days" class="calendar-grid"></div>
+          <div id="calendar-events" aria-live="polite">
+            <!-- Dynamically populated with events for the selected day -->
+          </div>
+        </div>
+
+        <div id="birthday-widget" class="widget" aria-live="polite">
+          <!-- Dynamically populated -->
+        </div>
+
+        <div id="news-widget" class="widget" aria-labelledby="news-widget-title">
+          <div class="widget-header">
+            <h3 id="news-widget-title">Corporate News</h3>
+          </div>
+          <div id="news-feed-content">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <script type="module" src="index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
